@@ -1,4 +1,4 @@
-## RICK AND MORTY API
+## WELISON NUNES  API
 
 ### Projeto realizado para conclusão da cadeira de Frontend da Pós Graduação em Desenvolvimento Web Fullstack no UNIPÊ
 
