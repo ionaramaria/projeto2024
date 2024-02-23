@@ -1,0 +1,25 @@
+.container_card {
+  width: 16rem;
+  background-color: #fff; /* Cor de fundo para contraste */
+  border-radius: 0.5rem; /* Bordas arredondadas para suavidade */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  overflow: hidden; /* Garante que todo o conteúdo fique dentro das bordas arredondadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+}
+
+.container_card:hover {
+  transform: translateY(-5px); /* Efeito de leve elevação ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada ao passar o mouse */
+}
+
+.content_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1rem; /* Espaçamento interno para evitar que o conteúdo toque as bordas */
+  gap: 0.5rem; /* Espaço entre os elementos internos */
+}
+
+/* Melhorias adicionais específicas podem ser necessárias dependendo do conteúdo interno */

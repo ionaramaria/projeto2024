@@ -1,0 +1,70 @@
+:root {
+  --background-color: #f0f0f0;
+  --button-color: #007bff;
+  --button-hover-color: #0056b3;
+  --button-active-color: #004094;
+  --text-color: #333;
+  --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --border-radius: 10px;
+  --gap: 1rem;
+}
+
+.container_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: var(--gap);
+}
+
+.container_buttons_prev_next {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap);
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.container_buttons_prev_next button {
+  width: 100px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container_buttons_prev_next button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.container_buttons_prev_next button:active {
+  background-color: var(--button-active-color);
+}
+
+/* Card styles */
+.CardWrapper {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.CardWrapper:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.CardWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.CardWrapper .Card-Body {
+  padding: var(--gap);
+  color: var(--text-color);
+}
